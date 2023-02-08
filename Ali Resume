@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ALI RESUME</title>
+</head>
+<body>
+
+<h1><center>ALI RESUME</center></h1> 
+
+<script>
+  var personalInfo = {
+    name: "Ali Sohail Kasbati",
+    address: "Flat no D10, M.L Plaza, Jamshed road no 3, Karachi.",
+    phone: "0312-2353550",
+    email: "alikasbati78@gmail.com"
+  };
+
+  var education = [
+    {
+      degree: "Bachelor of Science in Computer Science",
+      school: "University of Karachi (UBIT)",
+      year: "2022-2026"
+    },
+    {
+      degree: "Intermediate",
+      school: "S.M Govt Science College",
+      year: "2020-2022"
+    },
+    {
+      degree: "MATRICULATION",
+      school: "Aga Khan School",
+      year: "2011-2020"
+    }
+  ];
+
+  var workExperience = [
+    {
+      title: "Software Developer",
+      company: "SMIT Software House",
+      year: "2021-2023"
+    },
+    {
+      title: "Graphic Designer",
+      company: "AL-Jadeed Residency",
+      year: "2020-2023"
+    }
+  ];
+
+  var skills = ["Adobe Illustrator", "Adobe Photoshop", "C++", "JavaScript", "Python","Html"];
+
+  document.write("<h2>Personal Information</h2>");
+  document.write("<p>Name: " + personalInfo.name + "</p>");
+  document.write("<p>Address: " + personalInfo.address + "</p>");
+  document.write("<p>Phone: " + personalInfo.phone + "</p>");
+  document.write("<p>Email: " + personalInfo.email + "</p>");
+
+  document.write("<h2>Education</h2>");
+  for (var i = 0; i < education.length; i++) {
+    document.write("<p>" + education[i].degree + " from " + education[i].school + " (" + education[i].year + ")</p>");
+  }
+
+  document.write("<h2>Work Experience</h2>");
+  for (var i = 0; i < workExperience.length; i++) {
+    document.write("<p>" + workExperience[i].title + " at " + workExperience[i].company + " (" + workExperience[i].year + ")</p>");
+  }
+
+  document.write("<h2>Skills</h2>");
+  document.write("<ul>");
+  for (var i = 0; i < skills.length; i++) {
+    document.write("<li>" + skills[i] + "</li>");
+  }
+  document.write("</ul>");
+</script>
+
+</body>
+</html>
